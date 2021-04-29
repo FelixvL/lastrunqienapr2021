@@ -1,4 +1,4 @@
-class Demo{  //    AW
+class Demo{  //    AX
 	public static void main(String[] args) {
 		lopen(new Fiets());
 	}
@@ -12,7 +12,7 @@ class Demo{  //    AW
 
 class Fiets{
 	int snelheid = 3;
-	static int fietsen(int getal){  // getal
+	static int fietsen(int snelheid){  // getal
 		System.out.println("fietsen met "+snelheid);
 		return 8;
 	}
