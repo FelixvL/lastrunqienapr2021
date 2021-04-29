@@ -1,4 +1,4 @@
-class Demo{  //    AH
+class Demo{  //    AJ
 	public static void main(String[] args) {
 		lopen(new Fiets());
 	}
@@ -6,7 +6,7 @@ class Demo{  //    AH
 		System.out.println("in lopen");
 		bike.snelheid = new Fiets().fietsen(6);
 		System.out.println(">>"+bike.snelheid);
-		fiets.fietsen(9);
+		bike.fietsen(9);
 	}
 }
 
