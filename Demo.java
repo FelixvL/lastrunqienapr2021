@@ -6,7 +6,7 @@ class Demo{  //    AU
 		System.out.println("in lopen");
 		bike.snelheid = new Fiets().fietsen(6);
 		System.out.println(">>"+bike.snelheid);
-		fiets.fietsen(9);
+		bike.fietsen(9);
 	}
 }
 
