@@ -1,4 +1,4 @@
-class Demo{  //    AZ
+class Demo{  //    AR
 	public static void main(String[] args) {
 		lopen();
 	}
@@ -9,8 +9,8 @@ class Demo{  //    AZ
 }
 
 class Fiets{
-	void fietsen(String getal){
-		System.out.println("fietsen in fiets"+getal);
+	void fietsen(int getal){
+		System.out.println("fietsen in fiets"+getal+getal);
 	}
 }
 
