@@ -1,17 +1,19 @@
-class Demo{  //    AL
+class Demo{  //    AH
 	public static void main(String[] args) {
-		lopen();
+		lopen(new Fiets());
 	}
-	static void lopen(){
+	static void lopen(Fiets bike){
 		System.out.println("in lopen");
-		Fiets fiets = new Fiets().fietsen(6);
+		bike.snelheid = new Fiets().fietsen(6);
+		System.out.println(">>"+bike.snelheid);
 		fiets.fietsen(9);
 	}
 }
 
 class Fiets{
-	int fietsen(int getal){
-		System.out.println(getal+"fietsen");
+	int snelheid = 3;
+	int fietsen(int snelheid){  // getal
+		System.out.println("fietsen met "+snelheid);
 		return 7;
 	}
 }
