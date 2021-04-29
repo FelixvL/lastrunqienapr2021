@@ -1,4 +1,4 @@
-class Demo{  // AW
+class Demo{  // AW test
 	public static void main(String[] args) {
 		System.out.println(args.length);
 	}
