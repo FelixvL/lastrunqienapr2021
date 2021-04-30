@@ -1,4 +1,4 @@
-class Demo{  //    BZ
+class Demo{  //    BA
 	public static void main(String[] args) {
 		System.out.println("Start");
 		Cola cola = new Cola();
@@ -6,7 +6,7 @@ class Demo{  //    BZ
 	}
 }
 class Cola{
-	void drinken(){
+	void drinken() throws Exception{
 		throw new Exception();
 	}
 }
