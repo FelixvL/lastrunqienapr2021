@@ -1,7 +1,7 @@
-class Demo{  //    BK
+class Demo{  //    BL
 	public static void main(String[] args){
 		System.out.println("Start");
-		ColaZero cola = new ColaZero();
+		Cola cola = new ColaZero();
 		try{
 			cola.drinken();
 		}finally{
