@@ -1,32 +1,22 @@
-class Demo{  //    BN
-	public static void main(String[] args)throws Exception{
-		System.out.println("Start");
-		Cola cola = new ColaZero();
-		int a = 7;
-		try{
-			a = 5;
-			cola.drinken();
-		}finally{
-			a = 6;
-			System.out.println("bijna weekend");
-		}
-		System.out.println("Einde" + a);
+class Demo{  //    CA
+	public static void main(String[] args){
+		System.out.println("Here we go");
+		float r = 3.4;
+		Trefbal tb = new Trefbal();
+		tb.gooien(r);
+		System.out.println("AF!");
 	}
 }
-class Cola{
-	void drinken() throws Exception{
-		try{
-			throw new Exception();
-		}catch(Error e){
-			System.out.println("ok");
-		}
+class Trefbal{
+	void gooien(double t){
+		System.out.println("a");
+	}
+	int gooien(int s){
+		System.out.println("b");
+		return 7;
 	}
 }
-class ColaZero extends Cola{
-	void drinken(int a){
-		System.out.println("0 calorien");
-	}
-}
+
 
 
 
