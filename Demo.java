@@ -1,4 +1,4 @@
-class Demo{  //    BF
+class Demo{  //    BI
 	public static void main(String[] args) throws Exception{
 		System.out.println("Start");
 		Cola cola = new Cola();
@@ -15,6 +15,11 @@ class Demo{  //    BF
 class Cola{
 	void drinken() throws Exception{
 		throw new RuntimeException();
+	}
+}
+class ColaZero extends Cola{
+	void drinken(){
+		System.out.println("0 calorien");
 	}
 }
 
