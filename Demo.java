@@ -1,4 +1,4 @@
-class Demo{  //    CH
+class Demo{  //    CJ
 	public static void main(String[] args){
 		System.out.println("Here we go");
 		new Trefbal().lopen();
@@ -17,7 +17,9 @@ abstract class BalSport extends Sport{
 	}
 }
 abstract class Sport{
-	void gooien();
+	void gooien(){
+		System.out.println("Ik ben voor Sport");
+	}
 }
 
 
