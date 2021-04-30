@@ -1,19 +1,19 @@
-class Demo{  //    CC
+class Demo{  //    CF
 	public static void main(String[] args){
 		System.out.println("Here we go");
-		float r = 3.4f;
-		Trefbal tb = new Trefbal();
-		tb.gooien(r);
-		System.out.println("AF!");
+		new Trefbal().lopen();
+
 	}
 }
 class Trefbal{
-	void gooien(double t){
+	void gooien(){
 		System.out.println("a");
 	}
-	int gooien(int s){
-		System.out.println("b");
-		return 7;
+}
+
+abstract class BalSport{
+	void lopen(){
+		System.out.println("lopen");
 	}
 }
 
