@@ -1,7 +1,7 @@
-class Demo{  //    BJ
-	public static void main(String[] args) throws Exception{
+class Demo{  //    BK
+	public static void main(String[] args){
 		System.out.println("Start");
-		Cola cola = new ColaZero();
+		ColaZero cola = new ColaZero();
 		try{
 			cola.drinken();
 		}finally{
