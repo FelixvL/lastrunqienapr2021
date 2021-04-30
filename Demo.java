@@ -1,7 +1,7 @@
-class Demo{  //    CA
+class Demo{  //    CC
 	public static void main(String[] args){
 		System.out.println("Here we go");
-		float r = 3.4;
+		float r = 3.4f;
 		Trefbal tb = new Trefbal();
 		tb.gooien(r);
 		System.out.println("AF!");
