@@ -1,9 +1,12 @@
-class Demo{  //    CL
+class Demo{  //    CN
 	public static void main(String[] args){
 		System.out.println("Here we go");
-		new BalSport().lopen();
-		System.out.println(new Trefbal().spelduur);
-
+		Sport s = new Trefbal();
+		BalSport b = (BalSport)s;
+		b.gooien();
+		s.gooien();
+		System.out.println(s.spelduur);
+		System.out.println(b.spelduur);
 	}
 }
 class Trefbal extends BalSport{
