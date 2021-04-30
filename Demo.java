@@ -1,9 +1,10 @@
-class Demo{  //    BM
+class Demo{  //    BN
 	public static void main(String[] args)throws Exception{
 		System.out.println("Start");
 		Cola cola = new ColaZero();
+		int a = 7;
 		try{
-			int a = 5;
+			a = 5;
 			cola.drinken();
 		}finally{
 			a = 6;
