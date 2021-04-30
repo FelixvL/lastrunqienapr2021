@@ -1,24 +1,28 @@
-class Demo{  //    CK
+class Demo{  //    CL
 	public static void main(String[] args){
 		System.out.println("Here we go");
-		new Sport().lopen();
+		new BalSport().lopen();
+		System.out.println(new Trefbal().spelduur);
 
 	}
 }
 class Trefbal extends BalSport{
+	int spelduur = 8;
 	void gooien(){
-		System.out.println("a");
+		System.out.println("a"+spelduur);
 	}
 }
 
-abstract class BalSport extends Sport{
+class BalSport extends Sport{
+	int spelduur = 6;
 	void lopen(){
-		System.out.println("lopen");
+		System.out.println("lopen"+spelduur);
 	}
 }
 abstract class Sport{
+	int spelduur = 4;
 	void gooien(){
-		System.out.println("Ik ben voor Sport");
+		System.out.println("Ik ben voor Sport"+spelduur);
 	}
 }
 
