@@ -1,4 +1,4 @@
-class Demo{  // FM                
+class Demo{  // FN                
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
@@ -29,7 +29,7 @@ class Doorgang extends Aanvang{
 }
 
 class Voorstelling{
-	Doorgang zetten(){
+	Aanvang zetten(){
 		return new Doorgang();
 	}
 }
