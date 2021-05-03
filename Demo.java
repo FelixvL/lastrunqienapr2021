@@ -1,34 +1,18 @@
-class Demo{  //    CN
+class Demo{  // DR
 	public static void main(String[] args){
-		System.out.println("Here we go");
-		Sport s = new Trefbal();
-		BalSport b = (BalSport)s;
-		b.gooien();
-		s.gooien();
-		System.out.println(s.spelduur);
-		System.out.println(b.spelduur);
+		System.out.println("Start");
+		Start s = new Start();
+		s.daarGaanWe();
+		System.out.println("Einde");
 	}
 }
-class Trefbal extends BalSport{
-	int spelduur = 8;
-	void gooien(){
-		System.out.println("a"+spelduur);
+class Start{
+	void daarGaanWe(){
+		if(true)
+			System.out.println("Een");
+			System.out.println("Twee");
+		return;
 	}
 }
-
-class BalSport extends Sport{
-	int spelduur = 6;
-	void lopen(){
-		System.out.println("lopen"+spelduur);
-	}
-}
-abstract class Sport{
-	int spelduur = 4;
-	void gooien(){
-		System.out.println("Ik ben voor Sport"+spelduur);
-	}
-}
-
-
 
 
