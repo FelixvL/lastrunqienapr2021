@@ -1,10 +1,11 @@
-class Demo{  // FJ                 
+class Demo{  // FK                
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
 		Doorgang d = v.zetten();
+		double w;
 		try{
-			double w = d.proberen();
+			w = d.proberen();
 		}catch(Zomaar z){
 			System.out.println("caught");
 		}
