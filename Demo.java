@@ -1,4 +1,4 @@
-class Demo{  // DD
+class Demo{  // DE
 	public static void main(String[] args){
 		System.out.println(Simpel.hoi);
 
@@ -6,11 +6,11 @@ class Demo{  // DD
 }
 class Simpel{
 	static String hoi = "No";
-	int r = gaan();
+	static int r = gaan();
 	void gaan(int a){
 		System.out.println("Maybe");
 	}
-	static int gaan(){
+	int gaan(){
 		System.out.println("Yes");
 		return 7;
 	}
