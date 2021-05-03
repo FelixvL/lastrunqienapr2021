@@ -1,4 +1,4 @@
-class Demo{  // DR
+class Demo{  // DT
 	public static void main(String[] args){
 		System.out.println("Start");
 		Start s = new Start();
@@ -8,7 +8,7 @@ class Demo{  // DR
 }
 class Start{
 	void daarGaanWe(){
-		if(true)
+		if(false)
 			System.out.println("Een");
 			System.out.println("Twee");
 		return;
