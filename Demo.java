@@ -1,4 +1,4 @@
-class Demo{  // FF                  
+class Demo{  // FG                 
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
@@ -20,7 +20,7 @@ class Doorgang extends Aanvang{
 	double proberen(){
 		System.out.println("proberen in Aanvang");
 		throw new RuntimeException();
-		return 5.3f;
+		return 5.3;
 	}
 }
 
