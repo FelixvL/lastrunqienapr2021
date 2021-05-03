@@ -1,9 +1,9 @@
-class Demo{  // FK                
+class Demo{  // FL                
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
 		Doorgang d = v.zetten();
-		double w;
+		double w = 0;
 		try{
 			w = d.proberen();
 		}catch(Zomaar z){
