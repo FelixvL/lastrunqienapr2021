@@ -1,8 +1,7 @@
-class Demo{  // ED
+class Demo{  // EF
 	public static void main(String[] args){
 		Y y = new U();
-		R r = y;
-		r.ijen();
+		S t = (S)y;
 		System.out.println("Leuk");
 	}
 }
@@ -20,6 +19,10 @@ class U extends R{
 	}  
 }
 
-interface Y{    
-	void ijen();       
+interface Y{     
+	void ijen();
+}
+
+interface S{
+
 }
