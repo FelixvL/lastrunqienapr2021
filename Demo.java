@@ -1,36 +1,20 @@
-class Demo{  // FN                
+class Demo{  // GY                
 	public static void main(String[] args){
-		System.out.println("Beginnen");
-		Voorstelling v = new Voorstelling();
-		Doorgang d = v.zetten();
-		double w = 0;
-		try{
-			w = d.proberen();
-		}catch(Zomaar z){
-			System.out.println("caught");
-		}
-		System.out.println(w);
+		Groen g = new Groen();
+		g.rood = new LightRood();
+		System.out.println(g.rood.a);
+		System.out.println("kleur");
 	}	
 }
 
-
-abstract class Aanvang{
-	double proberen()throws Exception{
-		System.out.println("proberen in Aanvang");
-		return 5.6;
-	}
+class Groen{
+	Rood rood;
 }
 
-class Doorgang extends Aanvang{
-	double proberen()throws Zomaar{
-		System.out.println("proberen in Doorgang");
-		throw new Zomaar();
-	}
+class Rood{
+	int a = 34;
 }
 
-class Voorstelling{
-	Aanvang zetten(){
-		return new Doorgang();
-	}
+class LightRood extends Rood{
+	int a = 35;
 }
-class Zomaar extends Exception{}
