@@ -1,20 +1,18 @@
-class Demo{  // DG
+class Demo{  // EA
 	public static void main(String[] args){
-		new Simpel();
-		new Simpel();
-		System.out.println(new Simpel().r);
+		Y y = new U();
+
+		System.out.println("Leuk");
 
 	}
 }
-class Simpel{
-	static String hoi = "No";
-	static int r = gaan();
-	void gaan(int a){
-		System.out.println("Maybe");
-	}
-	static int gaan(){
-		System.out.println("Yes");
-		return 7;
-	}
+
+
+class R implements Y{
 }
 
+class U extends R{
+}
+
+interface Y{
+}
