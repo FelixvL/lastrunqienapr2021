@@ -1,9 +1,13 @@
-class Demo{  // FI                 
+class Demo{  // FJ                 
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
 		Doorgang d = v.zetten();
-		double w = d.proberen();
+		try{
+			double w = d.proberen();
+		}catch(Zomaar z){
+			System.out.println("caught");
+		}
 		System.out.println(w);
 	}	
 }
@@ -17,7 +21,7 @@ abstract class Aanvang{
 }
 
 class Doorgang extends Aanvang{
-	double proberen(){
+	double proberen()throws Exception{
 		System.out.println("proberen in Doorgang");
 		throw new Zomaar();
 	}
