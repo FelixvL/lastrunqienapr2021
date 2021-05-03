@@ -1,22 +1,25 @@
-class Demo{  // GH                
+class Demo{  // GI                
 	public static void main(String[] args){
 		System.out.println("start");
 		Groen g = new Groen();
-		System.out.println(g.rood.a);
+		switch(g.rood.a){
+			default:
+				System.out.println("in default");
+			case 34:
+				System.out.println("in 34");
+		}
 		System.out.println("kleur");
 		g.rood.a();
 	}	
 }
-
 class Groen{
-	final static LightRood rood;
+	final static LightRood rood = null;
 	Groen(){
 		System.out.println("Green");
 	}
 }
-
 class Rood{
-	static int a = 34;
+	static long a = 34;
 	Rood(){
 		System.out.println("Blauw");
 	}
@@ -25,9 +28,8 @@ class Rood{
 		return 66;
 	}
 }
-
 class LightRood extends Rood{
-	static int a = 35;
+	static long a = 35;
 	int a(){
 		System.out.println("rood");
 		return 88;
