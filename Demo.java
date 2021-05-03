@@ -1,16 +1,18 @@
-class Demo{  // FB                  
+class Demo{  // FC                  
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
 		Doorgang d = v.zetten();
-		d.proberen();
+		double w = d.proberen();
+		System.out.println(w);
 	}	
 }
 
 
 abstract class Aanvang{
-	void proberen(){
+	float proberen(){
 		System.out.println("proberen in Aanvang");
+		return 5.3;
 	}
 }
 
