@@ -1,4 +1,4 @@
-class Demo{  // DC
+class Demo{  // DD
 	public static void main(String[] args){
 		System.out.println(Simpel.hoi);
 
@@ -6,7 +6,7 @@ class Demo{  // DC
 }
 class Simpel{
 	static String hoi = "No";
-	static int r = gaan();
+	int r = gaan();
 	void gaan(int a){
 		System.out.println("Maybe");
 	}
