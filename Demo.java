@@ -1,25 +1,18 @@
-class Demo{  // DA
+class Demo{  // DC
 	public static void main(String[] args){
-		System.out.println("Start");
-		Start s = new Start();
-		Integer getal = s.daarGaanWe("7");
-		getal.getValue();
-		System.out.println("Einde" + getal);
-	}
-}
-class Start{
-	int daarGaanWe(){
-		if(true)
-			return 4;
-		else
-			System.out.println("Drie");
-		return 5;
-	}
-	int daarGaanWe(String r){
-		Integer b = 5;
-		System.out.println("Vier");
-		return b;
-	}
-}
+		System.out.println(Simpel.hoi);
 
+	}
+}
+class Simpel{
+	static String hoi = "No";
+	static int r = gaan();
+	void gaan(int a){
+		System.out.println("Maybe");
+	}
+	static int gaan(){
+		System.out.println("Yes");
+		return 7;
+	}
+}
 
