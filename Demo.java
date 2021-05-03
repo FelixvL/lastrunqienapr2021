@@ -1,7 +1,7 @@
-class Demo{  // EC
+class Demo{  // ED
 	public static void main(String[] args){
 		Y y = new U();
-		R r = (R)y;
+		R r = y;
 		r.ijen();
 		System.out.println("Leuk");
 	}
