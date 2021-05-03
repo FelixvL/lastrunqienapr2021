@@ -1,6 +1,8 @@
-class Demo{  // DE
+class Demo{  // DG
 	public static void main(String[] args){
-		System.out.println(Simpel.hoi);
+		new Simpel();
+		new Simpel();
+		System.out.println(new Simpel().r);
 
 	}
 }
@@ -10,7 +12,7 @@ class Simpel{
 	void gaan(int a){
 		System.out.println("Maybe");
 	}
-	int gaan(){
+	static int gaan(){
 		System.out.println("Yes");
 		return 7;
 	}
