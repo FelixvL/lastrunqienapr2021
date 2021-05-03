@@ -1,4 +1,4 @@
-class Demo{  // GA                
+class Demo{  // GB                
 	public static void main(String[] args){
 		Groen g = new Groen();
 		g.rood = new LightRood();
@@ -9,7 +9,7 @@ class Demo{  // GA
 }
 
 class Groen{
-	Rood rood;
+	LightRood rood;
 }
 
 class Rood{
