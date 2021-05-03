@@ -1,4 +1,4 @@
-class Demo{  // FC                  
+class Demo{  // FD                  
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
@@ -12,12 +12,15 @@ class Demo{  // FC
 abstract class Aanvang{
 	float proberen(){
 		System.out.println("proberen in Aanvang");
-		return 5.3;
+		return 5.6f;
 	}
 }
 
 class Doorgang extends Aanvang{
-
+	float proberen(){
+		System.out.println("proberen in Aanvang");
+		return 5.3f;
+	}
 }
 
 class Voorstelling{
