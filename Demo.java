@@ -1,4 +1,4 @@
-class Demo{  // FL                
+class Demo{  // FM                
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
@@ -22,7 +22,7 @@ abstract class Aanvang{
 }
 
 class Doorgang extends Aanvang{
-	double proberen()throws Exception{
+	double proberen()throws Zomaar{
 		System.out.println("proberen in Doorgang");
 		throw new Zomaar();
 	}
