@@ -1,4 +1,4 @@
-class Demo{  // FE                  
+class Demo{  // FF                  
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
@@ -12,13 +12,14 @@ class Demo{  // FE
 abstract class Aanvang{
 	double proberen(){
 		System.out.println("proberen in Aanvang");
-		return 5.6f;
+		return 5.6;
 	}
 }
 
 class Doorgang extends Aanvang{
-	float proberen(){
+	double proberen(){
 		System.out.println("proberen in Aanvang");
+		throw new RuntimeException();
 		return 5.3f;
 	}
 }
