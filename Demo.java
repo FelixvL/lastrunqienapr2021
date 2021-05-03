@@ -1,4 +1,4 @@
-class Demo{  // GZ                
+class Demo{  // GA                
 	public static void main(String[] args){
 		Groen g = new Groen();
 		g.rood = new LightRood();
@@ -16,7 +16,6 @@ class Rood{
 	int a = 34;
 	static int a(){
 		System.out.println("lightrood");
-		a = 55;
 		return 66;
 	}
 }
@@ -24,8 +23,7 @@ class Rood{
 class LightRood extends Rood{
 	int a = 35;
 	static int a(){
-		System.out.println("lightrood");
-		a = 77;
+		System.out.println("rood");
 		return 88;
 	}
 }
