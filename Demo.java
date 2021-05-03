@@ -1,4 +1,4 @@
-class Demo{  // FH                 
+class Demo{  // FI                 
 	public static void main(String[] args){
 		System.out.println("Beginnen");
 		Voorstelling v = new Voorstelling();
@@ -10,16 +10,16 @@ class Demo{  // FH
 
 
 abstract class Aanvang{
-	double proberen(){
+	double proberen()throws Exception{
 		System.out.println("proberen in Aanvang");
 		return 5.6;
 	}
 }
 
 class Doorgang extends Aanvang{
-	double proberen(int a){
-		System.out.println("proberen in Aanvang");
-		throw new RuntimeException();
+	double proberen(){
+		System.out.println("proberen in Doorgang");
+		throw new Zomaar();
 	}
 }
 
@@ -28,3 +28,4 @@ class Voorstelling{
 		return new Doorgang();
 	}
 }
+class Zomaar extends Exception{}
