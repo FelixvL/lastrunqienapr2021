@@ -1,7 +1,7 @@
-class Demo{  // GB                
+class Demo{  // GC                
 	public static void main(String[] args){
+		System.out.println("start");
 		Groen g = new Groen();
-		g.rood = new LightRood();
 		System.out.println(g.rood.a);
 		System.out.println("kleur");
 		g.rood.a();
