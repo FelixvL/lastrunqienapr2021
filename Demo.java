@@ -1,28 +1,23 @@
-class Demo{  // EF
+class Demo{  // FA                  
 	public static void main(String[] args){
-		Y y = new U();
-		S t = (S)y;
-		System.out.println("Leuk");
+		System.out.println("Beginnen");
+		Voorstelling v = new Voorstelling();
+		Doorgang d = v.zetten();
+	}	
+}
+
+
+abstract class Aanvang{
+
+
+}
+
+class Doorgang extends Aanvang{
+
+}
+
+class Voorstelling{
+	Aanvang zetten(){
+		return new Doorgang();
 	}
-}
-
-
-class R implements Y{ 
-	public void ijen(){
-		System.out.println("ijen in R");
-	}  
-}
-
-class U extends R{  
-	public void ijen(){
-		System.out.println("ijen in U");
-	}  
-}
-
-interface Y{     
-	void ijen();
-}
-
-interface S{
-
 }
