@@ -1,4 +1,4 @@
-class Demo{  // DX
+class Demo{  // DY
 	public static void main(String[] args){
 		System.out.println("Start");
 		Start s = new Start();
@@ -14,7 +14,7 @@ class Start{
 			System.out.println("Drie");
 		return 5;
 	}
-	void daarGaanWe(String r){
+	String daarGaanWe(String r){
 		System.out.println("Vier");
 		return "5";
 	}
