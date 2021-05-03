@@ -1,6 +1,7 @@
-class Demo{  // GK                
+class Demo{  // GL                
 	public static void main(String[] args){
-		int[][] oeps[] = {{{}},{},null,{4,6,2}};
+		int[][] oeps[] = {{{}},{},null,{null, {4,5,6}}};
+		System.out.println(oeps.length);
 		System.out.println("gelukt");
 	}	
 }
