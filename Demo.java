@@ -1,4 +1,4 @@
-class Demo{  // GD                
+class Demo{  // GE                
 	public static void main(String[] args){
 		System.out.println("start");
 		Groen g = new Groen();
@@ -9,11 +9,17 @@ class Demo{  // GD
 }
 
 class Groen{
-	LightRood rood;
+	final LightRood rood;
+	Groen(){
+		rood = new LightRood();
+	}
 }
 
 class Rood{
 	static int a = 34;
+	Rood(){
+		System.out.println("Blauw");
+	}
 	static int a(){
 		System.out.println("lightrood");
 		return 66;
