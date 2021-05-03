@@ -1,4 +1,4 @@
-class Demo{  // GF                
+class Demo{  // GG                
 	public static void main(String[] args){
 		System.out.println("start");
 		Groen g = new Groen();
@@ -9,7 +9,7 @@ class Demo{  // GF
 }
 
 class Groen{
-	final LightRood rood;
+	final static LightRood rood;
 	Groen(){
 		rood = new LightRood();
 	}
@@ -20,7 +20,7 @@ class Rood{
 	Rood(){
 		System.out.println("Blauw");
 	}
-	static int a(){
+	int a(){
 		System.out.println("lightrood");
 		return 66;
 	}
